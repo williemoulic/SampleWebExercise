@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +7,7 @@
 }
 
 body{
+  font-family: "Poppins", sans-serif;
   background-color: #fafafa;
 }
 
@@ -32,19 +35,40 @@ main{
   margin-bottom: 15px;
 }
 
-.page .header > p{
+@font-face {
+  margin-top: 40px;
+  font-family: 'billabong';
+  src: url('Billabong.ttf');
   font-weight: bold;
-  color: #8e8e8e;
-  font-size: 18px;
 }
 
-.page .header > button{
+.page .header > p{
+  margin-top: 20px;
+  font-family: Neue Helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.facebook-button {
+  font-family: Neue Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
   width: inherit;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
   background-color: #0095f6;
   color: #ffffff;
+}
+
+.fa-facebook {
+  margin-right: 10px;
+}
+
+.fa-facebook:before {
+  content: "\f082";
+  font-family: FontAwesome;
 }
 
 .page .header div{
@@ -85,8 +109,12 @@ main{
 }
 
 .page .container form button{
+  font-family: Neue Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
   width: inherit;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 7px 20px;
   border-radius: 5px;
   border: none;
@@ -95,6 +123,9 @@ main{
 }
 
 .page .container ul{
+  font-family: Neue Helvetica, sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
   list-style: none;
   text-align: center;
   margin-bottom: 10px;
@@ -112,8 +143,14 @@ main{
 }
 
 /* option style */
+
+.option p{
+  font-family: Proxima Nova;
+}
+
 .option p > a{
-    text-decoration: none;
+  font-family: Proxima Nova;
+  text-decoration: none;
     color: #00a0f7;
 }
 
@@ -125,45 +162,6 @@ main{
 .otherapps p{
   margin-bottom: 15px;
 }
-
-.otherapps > button{
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  font-size: 18px;
-}
-
-/* footer style */
-.footer{
-  bottom: 0;
-  height: 2.5rem;
-  margin-top: 50px;
-}
-
-.footer ul{
-  text-align: center;
-}
-.footer ul li{
-  display: inline;
-  margin-right: 5px;
-}
-.footer ul li a{
-  text-decoration: none;
-  font-size: 12px; 
-  color: #00376b;
-}
-
-.footer p{
-  margin: 10px 0;
-  text-align: center;
-  color: #8e9096;
-  font-size: 14px;
-}
-
-
 
 /* Mobile Styles */
 
@@ -195,12 +193,74 @@ main{
     margin: 5px 0;
   }
 
-  .page .footer{
-    width: inherith
-  }
 }
 
 @media only screen and (min-width: 401px){
+    body {
+        font-family: Neue Helvetica
+    }
+  .page{
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    background-color: white;
+    margin: 40px 40px 10px 40px;
+  }
+
+  .page .header{
+    width: 270px;
+    margin-top: 15px;
+  }
+
+  .page .container{
+    width: 270px;
+  }
+
+  .option{
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    width: 350px;
+    height: 70px;
+    margin-top: 20px 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .otherapps{
+    margin: 20px 0;
+  }
+
+  /* footer style */
+  .footer{
+    bottom: 0;
+    height: 2.5rem;
+    margin-top: 50px;
+  }
+
+  .footer ul{
+    text-align: center;
+  }
+  .footer ul li{
+    display: inline;
+    margin-right: 5px;
+  }
+  .footer ul li a{
+    font-family:  Neue Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 12px; 
+    color: #8e9096;
+  }
+
+  .footer p{
+    font-family:  Neue Helvetica, sans-serif;
+    margin: 10px 0;
+    text-align: center;
+    color: #8e9096;
+    font-size: 12px;
+  }
+
+  @media only screen and (min-width: 401px){
     body {
         font-family: Neue Helvetica
     }
@@ -247,4 +307,5 @@ main{
   .page .footer{
     width: 100%;
   }
+}
 }
